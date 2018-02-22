@@ -17,15 +17,15 @@ public class HangMan {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hello, welcome to HANG MAN");
+        System.out.println("Bienvenido al ahorcado");
         Scanner reader = new Scanner(System.in);
         
         String secret;
-        
-        System.out.println("Please introduce a secret word: ");
+        System.out.println("Por favor escriba la palabra secreta: ");
         secret = reader.nextLine();
         
-        System.out.println("the word introduce is: " + secret);
+       // System.out.println("La palabra es: " + secret);
+       System.out.println(secret.length()+" numero de letras de la palabra");
     }
     
 }
