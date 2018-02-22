@@ -9,23 +9,28 @@ import java.util.Scanner;
 
 /**
  *
- * @author Estudiante
+ * @author Edwin Alberto Arias
  */
 public class HangMan {
 
     /**
      * @param args the command line arguments
      */
+    private static String[] palabras = {"cometa", "prueba", "cadena", "panaderia" };
+    private static String palabra = palabras[(int) (Math.random() * palabras.length)];
+    private static String rayita = new String(new char[palabra.length()]).replace("\0", "_");
+    private static int count = 0;
     public static void main(String[] args) {
         System.out.println("Bienvenido al ahorcado");
-        Scanner reader = new Scanner(System.in);
         
-        String secret;
-        System.out.println("Por favor escriba la palabra secreta: ");
-        secret = reader.nextLine();
+        
+        System.out.println("La palabra es: " + palabra);
+        
+        
         
        // System.out.println("La palabra es: " + secret);
-       System.out.println(secret.length()+" numero de letras de la palabra");
+       //System.out.println(secret.length()+" numero de letras de la palabra");
+       //System.out.println("escriba una letra: ");
     }
     
 }
