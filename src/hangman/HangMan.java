@@ -18,13 +18,13 @@ public class HangMan {
      */
     private static String[] palabras = {"cometa", "prueba", "cadena", "panaderia" };
     private static String palabra = palabras[(int) (Math.random() * palabras.length)];
-    private static String rayita = new String(new char[palabra.length()]).replace("\0", "_");
+    private static String rayita = new String(new char[palabra.length()]).replace("\0", "_ ");
     private static int count = 0;
     public static void main(String[] args) {
         System.out.println("Bienvenido al ahorcado");
         
         
-        System.out.println("La palabra es: " + palabra);
+        System.out.println("La palabra es: " + rayita);
         
         
         
